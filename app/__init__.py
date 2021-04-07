@@ -7,4 +7,8 @@ def create_app():
 	def index():
 		return 'Hey there, this is index'
 
+	@app.route('/new')
+	def new_route():
+		return 'Hey, your cicd worked successfully...😁'
+
 	return app
